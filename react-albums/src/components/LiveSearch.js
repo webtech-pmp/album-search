@@ -16,9 +16,8 @@ export default function LiveSearch(props) {
       )
       .then(response => {
         console.log(response.data.results);
-      });
-  }),
-    [term];
+      })[term];
+  });
   return (
     <Fragment>
       <header className="logo">
